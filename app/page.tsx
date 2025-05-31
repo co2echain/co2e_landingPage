@@ -43,10 +43,8 @@ export default function HomePage() {
                 CO2e enables the tokenization of carbon credit certificates
                 originally issued by Verra and TGO
               </strong>
-              Tokenize and trade carbon credit certificates from Verra and อบก.
-              (TGO)—all on the public CO2e Chain. No official partnership or
-              affiliation with Verra or อบก. (TGO); certificates are referenced
-              for transparency and verification.
+              Tokenize and trade carbon credit certificates from Verra and TGO ;
+              certificates are referenced for transparency and verification.
             </p>
 
             {/* Live Stats Ticker */}
