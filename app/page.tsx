@@ -668,7 +668,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {["Verra", "อบก. (TGO)", "Redex", "Evident", "Spiro Carbon"].map(
+            {["Verra", "TGO", "Redex", "Evident", "Spiro Carbon"].map(
               (partner, index) => (
                 <Card
                   key={partner}
