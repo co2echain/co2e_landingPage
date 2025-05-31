@@ -65,7 +65,7 @@ export default function HomePage() {
                   <CheckCircle className="h-5 w-5 text-[#0AD77C]" />
                 </div>
                 <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                  Certified by อบก. (TGO)
+                  Certified by TGO.
                 </span>
               </div>
             </div>
@@ -236,8 +236,8 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Project Onboarding</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Verra and อบก. (TGO) certified projects submit carbon credits
-                for tokenization
+                Verra and TGO. certified projects submit carbon credits for
+                tokenization
               </p>
             </div>
 
@@ -326,10 +326,9 @@ export default function HomePage() {
               Instant Compliance, Borderless Markets
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-400">
-              Tokenize certified carbon credits from Verra and Thailand's อบก.
-              (TGO) on CO2e Chain. Experience the future of climate asset
-              management with enterprise-grade features designed for global
-              scale.
+              Tokenize certified carbon credits from Verra and Thailand's TGO.
+              on CO2e Chain. Experience the future of climate asset management
+              with enterprise-grade features designed for global scale.
             </p>
           </div>
 
@@ -690,8 +689,7 @@ export default function HomePage() {
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-                "CO2e secures certified carbon credits from Verra and อบก.
-                (TGO)"
+                "CO2e secures certified carbon credits from Verra and TGO. "
               </p>
               <p className="text-gray-600 dark:text-gray-300 mt-4">
                 Enabling transparent tokenization and trading of carbon credits
@@ -802,7 +800,7 @@ export default function HomePage() {
                 <AccordionContent>
                   CO2e Chain tokenizes carbon credits certified by leading
                   global and regional authorities, including Verra (the global
-                  leader in voluntary carbon standard certification) and อบก.
+                  leader in voluntary carbon standard certification) and TGO.
                   (TGO - Thailand Greenhouse Gas Management Organization). Every
                   carbon token is backed by trusted certification and fully
                   auditable on-chain.
@@ -883,7 +881,7 @@ export default function HomePage() {
 
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
             "Tokenize, trade, and retire carbon credits certified by Verra and
-            Thailand's อบก. (TGO) — all on the public, transparent CO2e Chain."
+            Thailand's TGO. — all on the public, transparent CO2e Chain."
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

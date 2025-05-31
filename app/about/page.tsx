@@ -1,8 +1,8 @@
-import { PageHeader } from "@/components/ui/page-header"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Target, Globe, Award, ArrowRight } from "lucide-react"
+import { PageHeader } from "@/components/ui/page-header";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Target, Globe, Award, ArrowRight } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -19,10 +19,13 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-              To create a transparent, immutable, and globally accessible infrastructure for climate action
-              verification. We believe that trust is the foundation of effective climate action, and blockchain
-              technology provides the transparency needed to build that trust at scale. CO2e Chain specializes in the
-              tokenization of carbon credits certified by leading authorities like Verra and Thailand's อบก. (TGO).
+              To create a transparent, immutable, and globally accessible
+              infrastructure for climate action verification. We believe that
+              trust is the foundation of effective climate action, and
+              blockchain technology provides the transparency needed to build
+              that trust at scale. CO2e Chain specializes in the tokenization of
+              carbon credits certified by leading authorities like Verra and
+              Thailand's TGO.
             </p>
           </div>
 
@@ -36,8 +39,8 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Every climate action is recorded immutably on-chain, creating an unforgeable record of environmental
-                  impact.
+                  Every climate action is recorded immutably on-chain, creating
+                  an unforgeable record of environmental impact.
                 </p>
               </CardContent>
             </Card>
@@ -51,7 +54,8 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Breaking down barriers to climate markets, enabling participation from anywhere in the world.
+                  Breaking down barriers to climate markets, enabling
+                  participation from anywhere in the world.
                 </p>
               </CardContent>
             </Card>
@@ -65,8 +69,8 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Leveraging blockchain's immutable nature to eliminate greenwashing and build genuine climate
-                  accountability.
+                  Leveraging blockchain's immutable nature to eliminate
+                  greenwashing and build genuine climate accountability.
                 </p>
               </CardContent>
             </Card>
@@ -78,37 +82,47 @@ export default function AboutPage() {
       <section className="py-20 bg-white/50 dark:bg-gray-900/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Story</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              Our Story
+            </h2>
 
             <div className="prose prose-lg max-w-none text-gray-600 dark:text-gray-300">
               <p className="text-xl leading-relaxed mb-6">
-                CO2e Chain was born from a simple observation: the climate crisis demands unprecedented transparency and
-                accountability, yet traditional carbon markets operate in opacity.
+                CO2e Chain was born from a simple observation: the climate
+                crisis demands unprecedented transparency and accountability,
+                yet traditional carbon markets operate in opacity.
               </p>
 
               <p className="leading-relaxed mb-6">
-                Founded in 2023 by a team of blockchain engineers, climate scientists, and policy experts, we recognized
-                that blockchain technology could solve the fundamental trust issues plaguing climate markets.
-                Double-counting, greenwashing, and lack of verification were not just technical problems—they were
-                barriers to the massive scale of climate action our planet needs.
+                Founded in 2023 by a team of blockchain engineers, climate
+                scientists, and policy experts, we recognized that blockchain
+                technology could solve the fundamental trust issues plaguing
+                climate markets. Double-counting, greenwashing, and lack of
+                verification were not just technical problems—they were barriers
+                to the massive scale of climate action our planet needs.
               </p>
 
               <p className="leading-relaxed mb-6">
-                Our focus on carbon credit tokenization began with partnerships with leading certification authorities.
-                By working directly with Verra (the global leader in voluntary carbon standards) and อบก. (TGO -
-                Thailand's Greenhouse Gas Management Organization), we ensure that every tokenized carbon credit
-                maintains the highest standards of verification and authenticity.
+                Our focus on carbon credit tokenization began with partnerships
+                with leading certification authorities. By working directly with
+                Verra (the global leader in voluntary carbon standards) and TGO.
+                (TGO - Thailand's Greenhouse Gas Management Organization), we
+                ensure that every tokenized carbon credit maintains the highest
+                standards of verification and authenticity.
               </p>
 
               <p className="leading-relaxed mb-6">
-                Today, CO2e Chain powers climate asset verification across multiple countries, supporting everything
-                from carbon credits to renewable energy certificates. Our network has verified over 89,000 tonnes of CO2
-                equivalent and certified over 1.3 million MWh of clean energy.
+                Today, CO2e Chain powers climate asset verification across
+                multiple countries, supporting everything from carbon credits to
+                renewable energy certificates. Our network has verified over
+                89,000 tonnes of CO2 equivalent and certified over 1.3 million
+                MWh of clean energy.
               </p>
 
               <p className="leading-relaxed">
-                But we're just getting started. Our vision is a world where every climate claim is backed by immutable,
-                public proof—where trust in climate action is built into the infrastructure itself.
+                But we're just getting started. Our vision is a world where
+                every climate claim is backed by immutable, public proof—where
+                trust in climate action is built into the infrastructure itself.
               </p>
             </div>
           </div>
@@ -119,9 +133,12 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Created by BlockEdge</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Created by BlockEdge
+            </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              The technology company pioneering blockchain solutions for climate action
+              The technology company pioneering blockchain solutions for climate
+              action
             </p>
           </div>
 
@@ -170,18 +187,25 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <CardTitle className="text-2xl">BlockEdge</CardTitle>
-                <Badge variant="outline" className="border-[#00D4FF] text-[#00D4FF]">
+                <Badge
+                  variant="outline"
+                  className="border-[#00D4FF] text-[#00D4FF]"
+                >
                   Creator of CO2e Chain
                 </Badge>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                  BlockEdge is a carbon credit marketplace and tokenization platform, enabling individuals and
-                  businesses to easily deposit verified carbon credits into a global pool and receive CO2e tokens in
-                  return. Buy, trade, or retire your CO2e tokens for real climate impact.
+                  BlockEdge is a carbon credit marketplace and tokenization
+                  platform, enabling individuals and businesses to easily
+                  deposit verified carbon credits into a global pool and receive
+                  CO2e tokens in return. Buy, trade, or retire your CO2e tokens
+                  for real climate impact.
                 </p>
                 <div className="flex justify-center space-x-4">
-                  <Button className="bg-[#00D4FF] hover:bg-[#00D4FF]/90">Visit BlockEdge</Button>
+                  <Button className="bg-[#00D4FF] hover:bg-[#00D4FF]/90">
+                    Visit BlockEdge
+                  </Button>
                   <Button
                     variant="outline"
                     className="border-[#0AD77C] text-[#0AD77C] hover:bg-[#0AD77C] hover:text-white"
@@ -205,29 +229,41 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold mb-2 text-[#00D4FF]">Radical Transparency</h3>
+                <h3 className="text-xl font-semibold mb-2 text-[#00D4FF]">
+                  Radical Transparency
+                </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  We believe that climate action must be verifiable by anyone, anywhere, at any time.
+                  We believe that climate action must be verifiable by anyone,
+                  anywhere, at any time.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2 text-[#0AD77C]">Scientific Rigor</h3>
+                <h3 className="text-xl font-semibold mb-2 text-[#0AD77C]">
+                  Scientific Rigor
+                </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Every protocol and standard we implement is grounded in peer-reviewed climate science.
+                  Every protocol and standard we implement is grounded in
+                  peer-reviewed climate science.
                 </p>
               </div>
             </div>
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold mb-2 text-[#1FBFB8]">Global Inclusion</h3>
+                <h3 className="text-xl font-semibold mb-2 text-[#1FBFB8]">
+                  Global Inclusion
+                </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Climate action should be accessible to everyone, regardless of geography or economic status.
+                  Climate action should be accessible to everyone, regardless of
+                  geography or economic status.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2 text-[#00D4FF]">Long-term Thinking</h3>
+                <h3 className="text-xl font-semibold mb-2 text-[#00D4FF]">
+                  Long-term Thinking
+                </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  We build infrastructure for the next century of climate action, not just today's needs.
+                  We build infrastructure for the next century of climate
+                  action, not just today's needs.
                 </p>
               </div>
             </div>
@@ -238,9 +274,12 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Mission</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Join Our Mission
+          </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            Whether you're a developer, enterprise, or climate advocate, there's a place for you in the CO2e ecosystem.
+            Whether you're a developer, enterprise, or climate advocate, there's
+            a place for you in the CO2e ecosystem.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-[#00D4FF] hover:bg-[#00D4FF]/90">
@@ -258,5 +297,5 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

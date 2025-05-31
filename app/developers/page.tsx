@@ -1,9 +1,20 @@
-import { PageHeader } from "@/components/ui/page-header"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Code, Book, Terminal, Zap, Shield, ArrowRight, ExternalLink, Copy, CheckCircle, Github } from "lucide-react"
+import { PageHeader } from "@/components/ui/page-header";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Code,
+  Book,
+  Terminal,
+  Zap,
+  Shield,
+  ArrowRight,
+  ExternalLink,
+  Copy,
+  CheckCircle,
+  Github,
+} from "lucide-react";
 
 export default function DevelopersPage() {
   return (
@@ -18,10 +29,13 @@ export default function DevelopersPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Get Started in Minutes</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Get Started in Minutes
+            </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Integrate certified carbon credit tokenization into your application with just a few lines of code. Work
-              with carbon credits certified by Verra and Thailand's อบก. (TGO).
+              Integrate certified carbon credit tokenization into your
+              application with just a few lines of code. Work with carbon
+              credits certified by Verra and Thailand's TGO.
             </p>
           </div>
 
@@ -34,8 +48,12 @@ export default function DevelopersPage() {
                 <CardTitle>1. Get API Key</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Sign up for free and get your API key instantly</p>
-                <Button className="bg-[#00D4FF] hover:bg-[#00D4FF]/90">Get Started</Button>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Sign up for free and get your API key instantly
+                </p>
+                <Button className="bg-[#00D4FF] hover:bg-[#00D4FF]/90">
+                  Get Started
+                </Button>
               </CardContent>
             </Card>
 
@@ -50,7 +68,10 @@ export default function DevelopersPage() {
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Choose from our SDKs for JavaScript, Python, Go, or Rust
                 </p>
-                <Button variant="outline" className="border-[#0AD77C] text-[#0AD77C]">
+                <Button
+                  variant="outline"
+                  className="border-[#0AD77C] text-[#0AD77C]"
+                >
                   View SDKs
                 </Button>
               </CardContent>
@@ -67,7 +88,10 @@ export default function DevelopersPage() {
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Mint, trade, and retire climate assets programmatically
                 </p>
-                <Button variant="outline" className="border-[#1FBFB8] text-[#1FBFB8]">
+                <Button
+                  variant="outline"
+                  className="border-[#1FBFB8] text-[#1FBFB8]"
+                >
                   See Examples
                 </Button>
               </CardContent>
@@ -82,7 +106,10 @@ export default function DevelopersPage() {
                   <Terminal className="h-5 w-5 mr-2" />
                   Quick Example
                 </CardTitle>
-                <Badge variant="outline" className="border-[#0AD77C] text-[#0AD77C]">
+                <Badge
+                  variant="outline"
+                  className="border-[#0AD77C] text-[#0AD77C]"
+                >
                   JavaScript
                 </Badge>
               </div>
@@ -113,7 +140,11 @@ const credit = await client.assets.mint({
 console.log('Minted credit:', credit.id);`}</code>
               </pre>
               <div className="flex justify-end mt-4">
-                <Button size="sm" variant="ghost" className="text-gray-400 hover:text-white">
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  className="text-gray-400 hover:text-white"
+                >
                   <Copy className="h-4 w-4 mr-2" />
                   Copy
                 </Button>
@@ -127,7 +158,9 @@ console.log('Minted credit:', credit.id);`}</code>
       <section className="py-20 bg-white/50 dark:bg-gray-900/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">API Documentation</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              API Documentation
+            </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
               Comprehensive guides and references for all CO2e Chain APIs
             </p>
@@ -191,7 +224,8 @@ console.log('Minted credit:', credit.id);`}</code>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 dark:text-gray-300 mb-4">
-                      All API requests require authentication using API keys passed in the Authorization header.
+                      All API requests require authentication using API keys
+                      passed in the Authorization header.
                     </p>
                     <div className="bg-gray-900 text-white p-4 rounded text-sm">
                       <code>Authorization: Bearer your-api-key</code>
@@ -208,7 +242,8 @@ console.log('Minted credit:', credit.id);`}</code>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    Explore our GraphQL API with real-time queries and subscriptions.
+                    Explore our GraphQL API with real-time queries and
+                    subscriptions.
                   </p>
                   <div className="bg-gray-900 text-white p-4 rounded text-sm mb-4">
                     <code>{`query GetAssets($filter: AssetFilter) {
@@ -243,7 +278,8 @@ console.log('Minted credit:', credit.id);`}</code>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    Subscribe to real-time events for asset minting, trading, and retirement.
+                    Subscribe to real-time events for asset minting, trading,
+                    and retirement.
                   </p>
                   <div className="bg-gray-900 text-white p-4 rounded text-sm mb-4">
                     <code>{`const ws = new WebSocket('wss://api.co2e.cc/ws');
@@ -255,7 +291,10 @@ ws.on('message', (data) => {
   }
 });`}</code>
                   </div>
-                  <Button variant="outline" className="border-[#0AD77C] text-[#0AD77C]">
+                  <Button
+                    variant="outline"
+                    className="border-[#0AD77C] text-[#0AD77C]"
+                  >
                     View Examples
                   </Button>
                 </CardContent>
@@ -269,7 +308,9 @@ ws.on('message', (data) => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Official SDKs</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Official SDKs
+            </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
               Native libraries for your favorite programming language
             </p>
@@ -293,7 +334,10 @@ ws.on('message', (data) => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
-                    <Button size="sm" className="w-full bg-[#00D4FF] hover:bg-[#00D4FF]/90">
+                    <Button
+                      size="sm"
+                      className="w-full bg-[#00D4FF] hover:bg-[#00D4FF]/90"
+                    >
                       <Github className="h-4 w-4 mr-2" />
                       GitHub
                     </Button>
@@ -312,7 +356,9 @@ ws.on('message', (data) => {
       <section className="py-20 bg-white/50 dark:bg-gray-900/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Developer Resources</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Developer Resources
+            </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -403,10 +449,12 @@ ws.on('message', (data) => {
       {/* Community */}
       <section className="py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join the Developer Community</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Join the Developer Community
+          </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            Connect with other developers building on CO2e Chain. Get help, share ideas, and contribute to the
-            ecosystem.
+            Connect with other developers building on CO2e Chain. Get help,
+            share ideas, and contribute to the ecosystem.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-[#00D4FF] hover:bg-[#00D4FF]/90">
@@ -424,5 +472,5 @@ ws.on('message', (data) => {
         </div>
       </section>
     </div>
-  )
+  );
 }
