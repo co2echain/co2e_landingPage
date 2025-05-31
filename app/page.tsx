@@ -1,6 +1,11 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import {
   Globe,
   Shield,
@@ -14,10 +19,10 @@ import {
   Code,
   TrendingUp,
   ExternalLink,
-} from "lucide-react"
-import { LiveStatsTicker } from "@/components/sections/live-stats-ticker"
-import { ExplorerWidget } from "@/components/sections/explorer-widget"
-import { LiveNetworkMetrics } from "@/components/sections/live-network-metrics"
+} from "lucide-react";
+import { LiveStatsTicker } from "@/components/sections/live-stats-ticker";
+import { ExplorerWidget } from "@/components/sections/explorer-widget";
+import { LiveNetworkMetrics } from "@/components/sections/live-network-metrics";
 
 export default function HomePage() {
   return (
@@ -31,11 +36,17 @@ export default function HomePage() {
               The CO2e Chain — The Blockchain Powering Verified Climate Impact
             </h1>
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed animate-fade-in animation-delay-200">
-              A public, immutable blockchain designed for transparent, secure, and auditable carbon and clean energy
-              markets.
+              A public, immutable blockchain designed for transparent, secure,
+              and auditable carbon and clean energy markets.
               <br />
-              <strong>Tokenize certified carbon credits from Verra and Thailand's อบก. (TGO)</strong>—trade, and retire
-              climate assets globally, instantly, and with total trust.
+              <strong>
+                CO2e enables the tokenization of carbon credit certificates
+                originally issued by Verra and TGO
+              </strong>
+              Tokenize and trade carbon credit certificates from Verra and อบก.
+              (TGO)—all on the public CO2e Chain. No official partnership or
+              affiliation with Verra or อบก. (TGO); certificates are referenced
+              for transparency and verification.
             </p>
 
             {/* Live Stats Ticker */}
@@ -47,13 +58,17 @@ export default function HomePage() {
                 <div className="h-8 w-8 rounded-full bg-[#00D4FF]/10 flex items-center justify-center">
                   <CheckCircle className="h-5 w-5 text-[#00D4FF]" />
                 </div>
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Certified by Verra</span>
+                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  Certified by Verra
+                </span>
               </div>
               <div className="flex items-center space-x-3 px-6 py-3 bg-white/80 dark:bg-gray-800/80 rounded-full border border-[#0AD77C]/20">
                 <div className="h-8 w-8 rounded-full bg-[#0AD77C]/10 flex items-center justify-center">
                   <CheckCircle className="h-5 w-5 text-[#0AD77C]" />
                 </div>
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Certified by อบก. (TGO)</span>
+                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  Certified by อบก. (TGO)
+                </span>
               </div>
             </div>
 
@@ -65,14 +80,21 @@ export default function HomePage() {
                     <div
                       key={i}
                       className={`h-2 w-2 rounded-full animate-pulse ${
-                        i % 3 === 0 ? "bg-[#00D4FF]" : i % 3 === 1 ? "bg-[#0AD77C]" : "bg-[#1FBFB8]"
+                        i % 3 === 0
+                          ? "bg-[#00D4FF]"
+                          : i % 3 === 1
+                          ? "bg-[#0AD77C]"
+                          : "bg-[#1FBFB8]"
                       }`}
                       style={{ animationDelay: `${i * 100}ms` }}
                     />
                   ))}
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Globe className="h-16 w-16 text-[#00D4FF] animate-spin" style={{ animationDuration: "20s" }} />
+                  <Globe
+                    className="h-16 w-16 text-[#00D4FF] animate-spin"
+                    style={{ animationDuration: "20s" }}
+                  />
                 </div>
               </div>
             </div>
@@ -105,8 +127,10 @@ export default function HomePage() {
             </div>
 
             <p className="mt-8 text-sm text-gray-500 dark:text-gray-400 italic animate-fade-in animation-delay-800">
-              "CO2e Chain is the trust engine for the planet—public, programmable, and purpose-built for a new era of
-              climate integrity. Certify, trade, and retire real impact, all on one unstoppable blockchain."
+              "CO2e Chain is the trust engine for the planet—public,
+              programmable, and purpose-built for a new era of climate
+              integrity. Certify, trade, and retire real impact, all on one
+              unstoppable blockchain."
             </p>
           </div>
         </div>
@@ -116,7 +140,9 @@ export default function HomePage() {
       <section className="py-20 bg-white/50 dark:bg-gray-900/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why CO2e Chain?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Why CO2e Chain?
+            </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Turn every climate action into a permanent digital record.
             </p>
@@ -132,7 +158,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Every project, trade, and retirement is public, auditable, unforgeable
+                  Every project, trade, and retirement is public, auditable,
+                  unforgeable
                 </p>
               </CardContent>
             </Card>
@@ -146,7 +173,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Supports cross-border, multi-standard utility (carbon credits, RECs, SDG tokens, and more)
+                  Supports cross-border, multi-standard utility (carbon credits,
+                  RECs, SDG tokens, and more)
                 </p>
               </CardContent>
             </Card>
@@ -160,7 +188,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Architected for regulatory clarity, audit trails, and enterprise use
+                  Architected for regulatory clarity, audit trails, and
+                  enterprise use
                 </p>
               </CardContent>
             </Card>
@@ -174,7 +203,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Anyone can issue, verify, or retire climate assets; open API, on-chain data
+                  Anyone can issue, verify, or retire climate assets; open API,
+                  on-chain data
                 </p>
               </CardContent>
             </Card>
@@ -186,10 +216,13 @@ export default function HomePage() {
       <section id="how-it-works" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works: The CO2e Climate Asset Lifecycle</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              How It Works: The CO2e Climate Asset Lifecycle
+            </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              "CO2e turns climate promises into permanent digital proofs—no more greenwashing, no more hidden trails.
-              Every offset, every REC, every SDG claim is carved into the public ledger."
+              "CO2e turns climate promises into permanent digital proofs—no more
+              greenwashing, no more hidden trails. Every offset, every REC,
+              every SDG claim is carved into the public ledger."
             </p>
           </div>
 
@@ -205,7 +238,8 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Project Onboarding</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Verra and อบก. (TGO) certified projects submit carbon credits for tokenization
+                Verra and อบก. (TGO) certified projects submit carbon credits
+                for tokenization
               </p>
             </div>
 
@@ -223,8 +257,8 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Tokenization</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Each certified carbon credit becomes a traceable, metadata-rich token backed by Verra or TGO
-                certification
+                Each certified carbon credit becomes a traceable, metadata-rich
+                token backed by Verra or TGO certification
               </p>
             </div>
 
@@ -240,7 +274,9 @@ export default function HomePage() {
                   3
                 </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Market Participation</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                Market Participation
+              </h3>
               <p className="text-gray-600 dark:text-gray-300">
                 Trade, transfer, bundle, or offset—no borders, no paperwork
               </p>
@@ -260,7 +296,8 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Retirement</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Burn tokens for proof—ESG compliance, SDG reporting, regulatory filings
+                Burn tokens for proof—ESG compliance, SDG reporting, regulatory
+                filings
               </p>
             </div>
           </div>
@@ -268,7 +305,10 @@ export default function HomePage() {
       </section>
 
       {/* Features & Use Cases Section */}
-      <section id="features" className="py-20 bg-white/50 dark:bg-gray-900/50 relative overflow-hidden">
+      <section
+        id="features"
+        className="py-20 bg-white/50 dark:bg-gray-900/50 relative overflow-hidden"
+      >
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#00D4FF]/5 via-transparent to-[#0AD77C]/5" />
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#00D4FF]/10 rounded-full blur-3xl animate-pulse" />
@@ -280,14 +320,18 @@ export default function HomePage() {
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-20">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-[#00D4FF]/10 to-[#0AD77C]/10 border border-[#00D4FF]/20 mb-6 animate-fade-in">
-              <span className="text-sm font-medium text-[#00D4FF] dark:text-[#00D4FF]">Features & Use Cases</span>
+              <span className="text-sm font-medium text-[#00D4FF] dark:text-[#00D4FF]">
+                Features & Use Cases
+              </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-[#00D4FF] to-[#0AD77C] bg-clip-text text-transparent dark:from-white dark:via-[#00D4FF] dark:to-[#0AD77C] animate-fade-in animation-delay-200">
               Instant Compliance, Borderless Markets
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-400">
-              Tokenize certified carbon credits from Verra and Thailand's อบก. (TGO) on CO2e Chain. Experience the
-              future of climate asset management with enterprise-grade features designed for global scale.
+              Tokenize certified carbon credits from Verra and Thailand's อบก.
+              (TGO) on CO2e Chain. Experience the future of climate asset
+              management with enterprise-grade features designed for global
+              scale.
             </p>
           </div>
 
@@ -299,7 +343,9 @@ export default function HomePage() {
                 <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-[#00D4FF] to-[#0AD77C] flex items-center justify-center">
                   <Zap className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Core Features</h3>
+                <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
+                  Core Features
+                </h3>
               </div>
 
               <div className="grid gap-6">
@@ -316,7 +362,8 @@ export default function HomePage() {
                   {
                     icon: Shield,
                     title: "Enterprise-Grade Security",
-                    description: "Multisig, regulated custody, live audit explorer",
+                    description:
+                      "Multisig, regulated custody, live audit explorer",
                     color: "#0AD77C",
                     stats: "99.9%",
                     statsLabel: "Uptime SLA",
@@ -325,7 +372,8 @@ export default function HomePage() {
                   {
                     icon: Network,
                     title: "API for Builders",
-                    description: "Instant integration for platforms, corporates, auditors",
+                    description:
+                      "Instant integration for platforms, corporates, auditors",
                     color: "#1FBFB8",
                     stats: "<3s",
                     statsLabel: "Response Time",
@@ -334,7 +382,8 @@ export default function HomePage() {
                   {
                     icon: BarChart3,
                     title: "Composable Markets",
-                    description: "Build new climate products, loyalty rewards, compliance bundles",
+                    description:
+                      "Build new climate products, loyalty rewards, compliance bundles",
                     color: "#00D4FF",
                     stats: "24/7",
                     statsLabel: "Market Access",
@@ -353,19 +402,29 @@ export default function HomePage() {
                           className="h-14 w-14 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
                           style={{ backgroundColor: `${feature.color}15` }}
                         >
-                          <feature.icon className="h-7 w-7" style={{ color: feature.color }} />
+                          <feature.icon
+                            className="h-7 w-7"
+                            style={{ color: feature.color }}
+                          />
                         </div>
                         <div className="text-right">
-                          <div className="text-sm font-mono font-bold" style={{ color: feature.color }}>
+                          <div
+                            className="text-sm font-mono font-bold"
+                            style={{ color: feature.color }}
+                          >
                             {feature.stats}
                           </div>
-                          <div className="text-xs text-gray-500 dark:text-gray-400">{feature.statsLabel}</div>
+                          <div className="text-xs text-gray-500 dark:text-gray-400">
+                            {feature.statsLabel}
+                          </div>
                         </div>
                       </div>
                       <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#00D4FF] transition-colors duration-300">
                         {feature.title}
                       </h4>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{feature.description}</p>
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        {feature.description}
+                      </p>
                     </CardContent>
                   </Card>
                 ))}
@@ -378,7 +437,9 @@ export default function HomePage() {
                 <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-[#0AD77C] to-[#1FBFB8] flex items-center justify-center">
                   <Users className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Target Users</h3>
+                <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
+                  Target Users
+                </h3>
               </div>
 
               <div className="grid gap-6">
@@ -413,7 +474,8 @@ export default function HomePage() {
                   {
                     icon: Code,
                     title: "Innovators",
-                    description: "Build new apps, track supply chains, create rewards",
+                    description:
+                      "Build new apps, track supply chains, create rewards",
                     color: "#00D4FF",
                     stats: "1000+",
                     statsLabel: "Developers",
@@ -432,19 +494,29 @@ export default function HomePage() {
                           className="h-14 w-14 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
                           style={{ backgroundColor: `${user.color}15` }}
                         >
-                          <user.icon className="h-7 w-7" style={{ color: user.color }} />
+                          <user.icon
+                            className="h-7 w-7"
+                            style={{ color: user.color }}
+                          />
                         </div>
                         <div className="text-right">
-                          <div className="text-sm font-mono font-bold" style={{ color: user.color }}>
+                          <div
+                            className="text-sm font-mono font-bold"
+                            style={{ color: user.color }}
+                          >
                             {user.stats}
                           </div>
-                          <div className="text-xs text-gray-500 dark:text-gray-400">{user.statsLabel}</div>
+                          <div className="text-xs text-gray-500 dark:text-gray-400">
+                            {user.statsLabel}
+                          </div>
                         </div>
                       </div>
                       <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#00D4FF] transition-colors duration-300">
                         {user.title}
                       </h4>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{user.description}</p>
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        {user.description}
+                      </p>
                     </CardContent>
                   </Card>
                 ))}
@@ -459,7 +531,8 @@ export default function HomePage() {
                 Experience the Platform
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Discover how CO2e Chain transforms climate asset management with cutting-edge technology
+                Discover how CO2e Chain transforms climate asset management with
+                cutting-edge technology
               </p>
             </div>
 
@@ -468,7 +541,8 @@ export default function HomePage() {
               {[
                 {
                   title: "Real-time Verification",
-                  description: "Instant asset verification with blockchain immutability",
+                  description:
+                    "Instant asset verification with blockchain immutability",
                   metric: "< 3s",
                   metricLabel: "Verification Time",
                   icon: CheckCircle,
@@ -476,7 +550,8 @@ export default function HomePage() {
                 },
                 {
                   title: "Global Compliance",
-                  description: "Built-in support for international climate standards",
+                  description:
+                    "Built-in support for international climate standards",
                   metric: "15+",
                   metricLabel: "Standards Supported",
                   icon: Globe,
@@ -484,7 +559,8 @@ export default function HomePage() {
                 },
                 {
                   title: "Enterprise Security",
-                  description: "Bank-grade security with multi-signature protection",
+                  description:
+                    "Bank-grade security with multi-signature protection",
                   metric: "99.9%",
                   metricLabel: "Uptime SLA",
                   icon: Shield,
@@ -495,14 +571,18 @@ export default function HomePage() {
                   <div
                     className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-3xl blur-xl"
                     style={{
-                      background: `linear-gradient(135deg, ${showcase.gradient.replace("from-", "").replace("to-", ", ")})`,
+                      background: `linear-gradient(135deg, ${showcase.gradient
+                        .replace("from-", "")
+                        .replace("to-", ", ")})`,
                     }}
                   />
                   <Card className="relative h-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 overflow-hidden">
                     <div
                       className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r opacity-60"
                       style={{
-                        background: `linear-gradient(90deg, ${showcase.gradient.replace("from-", "").replace("to-", ", ")})`,
+                        background: `linear-gradient(90deg, ${showcase.gradient
+                          .replace("from-", "")
+                          .replace("to-", ", ")})`,
                       }}
                     />
                     <CardContent className="p-8 text-center">
@@ -521,11 +601,17 @@ export default function HomePage() {
                         {showcase.title}
                       </h4>
 
-                      <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">{showcase.description}</p>
+                      <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        {showcase.description}
+                      </p>
 
                       <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
-                        <div className="text-3xl font-mono font-bold text-[#00D4FF] mb-1">{showcase.metric}</div>
-                        <div className="text-sm text-gray-500 dark:text-gray-400">{showcase.metricLabel}</div>
+                        <div className="text-3xl font-mono font-bold text-[#00D4FF] mb-1">
+                          {showcase.metric}
+                        </div>
+                        <div className="text-sm text-gray-500 dark:text-gray-400">
+                          {showcase.metricLabel}
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
@@ -560,8 +646,12 @@ export default function HomePage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Live Blockchain Activity</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">"Full network transparency—right now."</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Live Blockchain Activity
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              "Full network transparency—right now."
+            </p>
           </div>
 
           <ExplorerWidget />
@@ -572,22 +662,28 @@ export default function HomePage() {
       <section className="py-20 bg-white/50 dark:bg-gray-900/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">CO2e Ecosystem & Partners</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">Trusted by leading organizations worldwide</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              CO2e Ecosystem & Partners
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              Trusted by leading organizations worldwide
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {["Verra", "อบก. (TGO)", "Redex", "Evident", "Spiro Carbon"].map((partner, index) => (
-              <Card
-                key={partner}
-                className="p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="h-16 w-16 mx-auto mb-4 rounded-lg bg-gradient-to-br from-[#00D4FF]/10 to-[#0AD77C]/10 flex items-center justify-center">
-                  <Building2 className="h-8 w-8 text-[#00D4FF]" />
-                </div>
-                <h3 className="font-semibold">{partner}</h3>
-              </Card>
-            ))}
+            {["Verra", "อบก. (TGO)", "Redex", "Evident", "Spiro Carbon"].map(
+              (partner, index) => (
+                <Card
+                  key={partner}
+                  className="p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                >
+                  <div className="h-16 w-16 mx-auto mb-4 rounded-lg bg-gradient-to-br from-[#00D4FF]/10 to-[#0AD77C]/10 flex items-center justify-center">
+                    <Building2 className="h-8 w-8 text-[#00D4FF]" />
+                  </div>
+                  <h3 className="font-semibold">{partner}</h3>
+                </Card>
+              )
+            )}
           </div>
 
           <Card className="max-w-3xl mx-auto bg-gradient-to-r from-[#00D4FF]/5 to-[#0AD77C]/5 border-[#00D4FF]/20">
@@ -596,11 +692,13 @@ export default function HomePage() {
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-                "CO2e secures certified carbon credits from Verra and อบก. (TGO)"
+                "CO2e secures certified carbon credits from Verra and อบก.
+                (TGO)"
               </p>
               <p className="text-gray-600 dark:text-gray-300 mt-4">
-                Enabling transparent tokenization and trading of carbon credits certified by leading global and regional
-                authorities, with full regulatory compliance and real-time verification.
+                Enabling transparent tokenization and trading of carbon credits
+                certified by leading global and regional authorities, with full
+                regulatory compliance and real-time verification.
               </p>
             </CardContent>
           </Card>
@@ -611,9 +709,12 @@ export default function HomePage() {
       <section id="developers" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Developer / Enterprise Onboarding</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Developer / Enterprise Onboarding
+            </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              "Start building or integrating in minutes—docs, SDKs, and full support."
+              "Start building or integrating in minutes—docs, SDKs, and full
+              support."
             </p>
           </div>
 
@@ -623,7 +724,9 @@ export default function HomePage() {
                 <Users className="h-8 w-8 text-[#00D4FF]" />
               </div>
               <h3 className="font-semibold mb-2">1. Connect</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Wallet or API</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Wallet or API
+              </p>
             </Card>
 
             <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
@@ -631,7 +734,9 @@ export default function HomePage() {
                 <Building2 className="h-8 w-8 text-[#0AD77C]" />
               </div>
               <h3 className="font-semibold mb-2">2. Register</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Project or asset</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Project or asset
+              </p>
             </Card>
 
             <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
@@ -647,12 +752,17 @@ export default function HomePage() {
                 <CheckCircle className="h-8 w-8 text-[#00D4FF]" />
               </div>
               <h3 className="font-semibold mb-2">4. Download</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Immutable compliance certificate</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Immutable compliance certificate
+              </p>
             </Card>
           </div>
 
           <div className="text-center">
-            <Button size="lg" className="bg-[#0AD77C] hover:bg-[#0AD77C]/90 text-white px-8 py-3 text-lg font-semibold">
+            <Button
+              size="lg"
+              className="bg-[#0AD77C] hover:bg-[#0AD77C]/90 text-white px-8 py-3 text-lg font-semibold"
+            >
               Start Building Today
               <Code className="ml-2 h-5 w-5" />
             </Button>
@@ -664,8 +774,12 @@ export default function HomePage() {
       <section className="py-20 bg-white/50 dark:bg-gray-900/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Live Network Metrics</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">Real-time network health and activity</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Live Network Metrics
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              Real-time network health and activity
+            </p>
           </div>
 
           <LiveNetworkMetrics />
@@ -676,61 +790,85 @@ export default function HomePage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Frequently Asked Questions
+            </h2>
           </div>
 
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-0">
-                <AccordionTrigger className="text-left">Who certifies carbon credits on CO2e Chain?</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                  Who certifies carbon credits on CO2e Chain?
+                </AccordionTrigger>
                 <AccordionContent>
-                  CO2e Chain tokenizes carbon credits certified by leading global and regional authorities, including
-                  Verra (the global leader in voluntary carbon standard certification) and อบก. (TGO - Thailand
-                  Greenhouse Gas Management Organization). Every carbon token is backed by trusted certification and
-                  fully auditable on-chain.
+                  CO2e Chain tokenizes carbon credits certified by leading
+                  global and regional authorities, including Verra (the global
+                  leader in voluntary carbon standard certification) and อบก.
+                  (TGO - Thailand Greenhouse Gas Management Organization). Every
+                  carbon token is backed by trusted certification and fully
+                  auditable on-chain.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-left">Why trust CO2e over traditional registries?</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                  Why trust CO2e over traditional registries?
+                </AccordionTrigger>
                 <AccordionContent>
-                  CO2e provides complete transparency with public, immutable records that can't be altered or hidden.
-                  Unlike traditional registries, every transaction is auditable in real-time, eliminating the
-                  possibility of double-counting or fraudulent claims.
+                  CO2e provides complete transparency with public, immutable
+                  records that can't be altered or hidden. Unlike traditional
+                  registries, every transaction is auditable in real-time,
+                  eliminating the possibility of double-counting or fraudulent
+                  claims.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-left">How do I issue or retire an asset?</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                  How do I issue or retire an asset?
+                </AccordionTrigger>
                 <AccordionContent>
-                  Simply connect your wallet or use our API, register your project, and mint tokens representing your
-                  climate assets. Retirement is as easy as burning tokens, which creates an immutable proof of offset
-                  for compliance reporting.
+                  Simply connect your wallet or use our API, register your
+                  project, and mint tokens representing your climate assets.
+                  Retirement is as easy as burning tokens, which creates an
+                  immutable proof of offset for compliance reporting.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-left">Can I see all network activity?</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                  Can I see all network activity?
+                </AccordionTrigger>
                 <AccordionContent>
-                  Yes—our explorer is public and real-time. You can view every transaction, asset creation, and
-                  retirement on the network at exp.co2e.cc. Full transparency is a core principle of CO2e Chain.
+                  Yes—our explorer is public and real-time. You can view every
+                  transaction, asset creation, and retirement on the network at
+                  exp.co2e.cc. Full transparency is a core principle of CO2e
+                  Chain.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-4">
-                <AccordionTrigger className="text-left">How is CO2e compliant?</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                  How is CO2e compliant?
+                </AccordionTrigger>
                 <AccordionContent>
-                  CO2e is architected for regulatory clarity with built-in audit trails, enterprise-grade security, and
-                  compliance with international standards. Our immutable records provide the transparency regulators
-                  require.
+                  CO2e is architected for regulatory clarity with built-in audit
+                  trails, enterprise-grade security, and compliance with
+                  international standards. Our immutable records provide the
+                  transparency regulators require.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-5">
-                <AccordionTrigger className="text-left">What assets are supported?</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                  What assets are supported?
+                </AccordionTrigger>
                 <AccordionContent>
-                  CO2e supports carbon credits, Renewable Energy Certificates (RECs), SDG tokens, and other climate
-                  assets. Our universal asset support means you can tokenize any verified climate impact.
+                  CO2e supports carbon credits, Renewable Energy Certificates
+                  (RECs), SDG tokens, and other climate assets. Our universal
+                  asset support means you can tokenize any verified climate
+                  impact.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -746,8 +884,8 @@ export default function HomePage() {
           </h2>
 
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            "Tokenize, trade, and retire carbon credits certified by Verra and Thailand's อบก. (TGO) — all on the
-            public, transparent CO2e Chain."
+            "Tokenize, trade, and retire carbon credits certified by Verra and
+            Thailand's อบก. (TGO) — all on the public, transparent CO2e Chain."
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -778,10 +916,11 @@ export default function HomePage() {
           </div>
 
           <p className="text-lg font-semibold text-gray-700 dark:text-gray-300 italic">
-            "In an age of empty claims, only CO2e puts climate truth on-chain—forever."
+            "In an age of empty claims, only CO2e puts climate truth
+            on-chain—forever."
           </p>
         </div>
       </section>
     </>
-  )
+  );
 }
