@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(16,16)">
+    <!-- Simplified monochrome CO2e logo for Safari -->
+    <circle cx="0" cy="0" r="12" fill="#000000"/>
+    <!-- CO2 text -->
+    <text x="0" y="2" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="white">CO₂e</text>
+    <!-- Small leaf icon -->
+    <path d="M-2,-6 C-4,-8 -1,-9 1,-7 C3,-5 0,-4 -2,-6 Z" fill="white"/>
+  </g>
+</svg>
